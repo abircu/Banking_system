@@ -9,8 +9,6 @@ loginBtn.addEventListener("click", () => {
 const Addeposit = document.getElementById("button");
 Addeposit.addEventListener("click", () => {
   const depositNumber = getInputNumber("depositAmount");
-  // const depositAmount = document.getElementById("depositAmount").value;
-  // const depositNumber = parseFloat(depositAmount);
 
   update("currentBalance", depositNumber);
   update("currentDeposit", depositNumber);
@@ -19,14 +17,14 @@ Addeposit.addEventListener("click", () => {
 });
 
 //withdraw button Even handler
-const withdrew = document.getElementById("withdraw");
-withdrew.addEventListener("click", () => {
-  // const withdrawAmount = document.getElementById("withdeawAmout").value;
-  const withdrawNumber = getTnputNumber("withdeawAmout");
 
-  withdrawNumber = parseFloat(withdrawAmount);
+const withdrewBtn = document.getElementById("addwithdraw");
+withdrewBtn.addEventListener("click", () => {
+  const withdrawNumber = getInputNumber("withdrawAmout");
 
-  moneyOut("withdeawAmout", withdrawNumber);
+  update("currentWithdraw", withdrawNumber);
+  update("currentBalance", -1 * withdrawNumber);
+  document.getElementById("withdrawAmout").value = "";
 });
 
 function getInputNumber(id) {

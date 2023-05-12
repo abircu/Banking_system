@@ -12,52 +12,52 @@
 </head>
 <body>
     <div id="login-area">
-        <h1 class="text-center">Wellcome to our banking system</h1>
+        <h1 class="text-center">আমাদের ব্যাঙ্কিং সিস্টেমে আপনাকে স্বাগতম</h1>
         <div class="submit-area">
-            <h4>Login</h4>
-            <input type="text" class="form-control" placeholder="Enter your email">
+            <h4>লগইন</h4>
+            <input type="text" class="form-control" placeholder="ইমেইল দিন">
             <br>
-            <input type="password" class="form-control" placeholder="Enter password">
+            <input type="password" class="form-control" placeholder="পাসওয়র্ড দিন ">
             <br>
-            <button id="login" class="btn btn-success">Enter</button>
+            <button id="login" class="btn btn-success">প্রবেশ</button>
         </div>
     </div>
     <div id="transaction-area">
         <div class="row">
             <div class="col-md-4">
                 <div class="deposit status">
-                    <h5>Deposit</h5>
-                    <h2>$<span id="currentDeposit">00</span></h2>
+                    <h5>জমা করুন</h5>
+                    <h2>৳<span id="currentDeposit">00</span></h2>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="withdraw status">
-                    <h5>Withdraw</h5>
-                    <h2>$00</h2>
+                    <h5>টাকা উত্তোলন</h5>
+                    <h2>৳<span id="currentWithdraw">00</span></h2>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="Balance status">
-                    <h5>Balance</h5>
-                    <h2>$<span id="currentBalance">1240</span></h2>
+                    <h5>মোট টাকা</h5>
+                    <h2>৳<span id="currentBalance">00</span></h2>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
                <div class="submit-area">
-                    <h4>Deposit</h4>
-                    <input type="text" id="depositAmount" class="form-control" placeholder="$ amount you want to deposit">
+                    <h4>জমা করুন</h4>
+                    <input type="text" id="depositAmount" class="form-control" placeholder="৳ কত টাকা জমা করতে চান তা লিখুন  ">
                     <br>
-                    <button id="button" class="btn btn-success">deposit</button>
+                    <button id="button" class="btn btn-success">সাবমিট</button>
                 </div>
                </div>
             <div class="col-md-6">
                 <div class="submit-area">
-                    <h4>Withdraw</h4>
-                    <input type="text" id="withdeawAmout" class="form-control" placeholder="$ amount you want to withdraw">
+                    <h4>টাকা উত্তোলন</h4>
+                    <input type="text" id="withdrawAmout" class="form-control" placeholder="৳ কত টাকা উত্তোলন করতে চান তা লিখুন ">
                     <br>
-                    <button id="withdraw" class="btn btn-success">Withdraw</button>
+                    <button id="addwithdraw" class="btn btn-success">সাবমিট</button>
                 </div>
             </div>
         </div>
